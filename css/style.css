@@ -126,3 +126,37 @@ p {
   font-size: 1.6rem;
   padding: 0.5em 0;
 }
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100svh;
+  text-align: center;
+}
+
+#menu .menu-items {
+  color: var(--secondary-text-color);
+  display: flex;
+}
+
+#menu .menu-items article {
+  background-color: var(--secondary-background-color);
+  padding: 5vh;
+  margin: 0 1vw;
+  text-align: center;
+  position: relative;
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
