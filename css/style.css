@@ -96,3 +96,33 @@ h1 {
   width: 100%;
   max-width: 600px;
 }
+
+#about {
+  display: grid;
+  padding: 20vh 3rem;
+  width: 100%;
+  max-width: 1500px;
+  gap: 10% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  height: 100svh;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.6rem;
+  padding: 0.5em 0;
+}
