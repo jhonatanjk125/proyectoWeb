@@ -1,8 +1,98 @@
 @import url(variables.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  height: 10svh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+#logo {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+header > nav > ul {
+  display: flex;
+}
+
+header > nav > ul > li {
+  list-style: none;
+  padding: 0 18px;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+#home {
+  display: grid;
+  padding: 0 3rem;
+  width: 100%;
+  max-width: 1500px;
+  gap: 10% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  height: 90svh;
+  margin: auto;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  white-space: nowrap;
+}
+
+#home p {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1.2em;
+}
+
+.primary-btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  font-weight: 400;
+  padding: 0.5em 0.8em;
+  margin-top: 0.5em;
+  letter-spacing: 0.03em;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.banner {
+  width: 100%;
+}
+
+#home > section > img {
+  width: 100%;
+  max-width: 600px;
+}
