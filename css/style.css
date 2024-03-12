@@ -160,3 +160,26 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1rem;
 }
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100svh;
+  text-align: center;
+}
+
+#services .offered-services {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services .offered-services article{
+  flex: 0 0 33%;
+  width: 400px;
+}
+
+#services .offered-services article img {
+  width: 300px;
+}
