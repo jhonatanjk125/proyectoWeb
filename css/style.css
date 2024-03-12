@@ -247,6 +247,9 @@ h5 {
   display:flex;
 }
 
+.toggle {
+  display: none;
+}
 
 
 @media (max-width: 1300px) {
@@ -295,13 +298,19 @@ h5 {
     font-size: 1.2rem;
   }
 
-  #home img, #about img {
-    max-width: 90vw;
+  #home > section > img {
+    width:80vw;
+    padding-top: 3svh;
+  }
+
+  #about img {
+    max-width: 80vw;
     padding-top: 3svh;
   }
 
   #contact-banner {
     background-color: var(--secondary-background-color);
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,10 +328,6 @@ h5 {
     margin: auto;
   }
 
-  #home > section > img {
-    width: 90vw;
-  }
-
   #about {
     display: flex;
     align-items: center;
@@ -332,10 +337,7 @@ h5 {
     height: auto;
     text-align: center;
   }
-
-  header > nav {
-    display: none;
-  }
+  
   .banner {
     text-align: center;
   }
@@ -348,4 +350,82 @@ h5 {
     font-size: 2rem;
     padding: 3vh 0;
   }
+
+  #contact-banner h3 {
+    font-size: 1.4rem;
+  }
+
+  #menu .menu-items article {
+    padding: 1svh 4vw;
+  }
+
+  #menu .menu-items article img {
+    width: 200px;
+  }
+
+  #services .offered-services article img {
+    width: 200px;
+  }
+
+  #contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact > nav {
+    padding-left: 15vw;
+  }
+
+  #contact > nav:last-child {
+    padding-top: 5svh;
+    padding-left: 0;
+    text-align: center;
+    margin:auto;
+  }
+
+  /* Toggle Menu Mobile */
+  .toggle{
+    width: 35px;
+    height: 35px;
+    display: block;
+    cursor: pointer;
+    background: url(/storage/img/menu.svg);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+.toggle.active{
+    position: fixed;
+    right: 20px;
+    background: url(/storage/img/close.svg);
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navigation {
+  display:none;
+}
+
+.navigation.active
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 2svh;
+    padding-bottom: 2svh;
+    row-gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    background: var(--mobile-background-color);
+    z-index: 10;
+}
+  
 }
