@@ -183,3 +183,58 @@ h5 {
 #services .offered-services article img {
   width: 300px;
 }
+
+#contact-banner {
+  background-color: var(--secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 40svh;
+  margin: 10svh auto;
+}
+
+#contact-banner h3 {
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding: 1svh 0;
+}
+
+#contact {
+  display:flex;
+  justify-content: center;
+  color: var(--text-color);
+  padding-bottom: 5svh;
+}
+
+#contact nav {
+  width: 15vw;
+}
+
+#contact > nav > strong {
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 600;
+  padding: 1rem 0;
+  position: relative;
+}
+
+#contact > nav > strong:after{
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  bottom: 10%;
+  left: 0%;
+  border-bottom: 2.5px solid var(--primary-color);
+}
+
+#contact > nav > ul > li > a {
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
+#social {
+  display:flex;
+}
