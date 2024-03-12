@@ -152,6 +152,14 @@ p {
   position: relative;
 }
 
+.shopping-cart {
+  position:absolute;
+  background-color: var(--primary-color);
+  top: 0%;
+  right: 0%;
+  width: 50px;
+}
+
 h4 {
   font-size: 1.7rem;
   font-weight: 500;
@@ -231,7 +239,7 @@ h5 {
 #contact > nav > strong:after{
   content: "";
   position: absolute;
-  width: 25%;
+  width: 50px;
   height: 1px;
   bottom: 10%;
   left: 0%;
@@ -250,6 +258,13 @@ h5 {
 .toggle {
   display: none;
 }
+
+#social img {
+  width: 32px;
+  padding-right: 4px;
+}
+
+
 
 
 @media (max-width: 1300px) {
@@ -357,10 +372,19 @@ h5 {
 
   #menu .menu-items article {
     padding: 1svh 4vw;
+    position: relative;
   }
 
-  #menu .menu-items article img {
+  #menu .menu-items article img:first-child {
     width: 200px;
+  }
+
+  #menu .menu-items article a img {
+    position:absolute;
+    background-color: var(--primary-color);
+    top: 0%;
+    right: 0%;
+    max-width: 30px;
   }
 
   #services .offered-services article img {
