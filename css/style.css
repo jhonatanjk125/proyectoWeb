@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -65,7 +66,7 @@ header > nav > ul > li > a {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 400;
   color: var(--primary-color);
   white-space: nowrap;
@@ -239,7 +240,7 @@ h5 {
 #contact > nav > strong:after{
   content: "";
   position: absolute;
-  width: 50px;
+  width: 60px;
   height: 1px;
   bottom: 10%;
   left: 0%;
@@ -269,7 +270,7 @@ h5 {
 
 @media (max-width: 1300px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   #menu {
@@ -301,6 +302,12 @@ h5 {
 }
 
 @media (max-width: 900px) {
+  header {
+    padding: 20px 5%;
+  }
+  #services p {
+    padding: 0.5em 1em;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -407,14 +414,18 @@ h5 {
     margin:auto;
   }
 
+  #logo {
+    font-size: 1.5rem;
+  }
+
   /* Toggle Menu Mobile */
   .toggle{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: block;
     cursor: pointer;
     background: url(../storage/img/menu.svg);
-    background-size: 35px;
+    background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 11;
@@ -424,9 +435,10 @@ h5 {
     position: fixed;
     right: 20px;
     background: url(../storage/img/close.svg);
-    background-size: 35px;
+    background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 11;
 }
 
 .navigation {
@@ -436,20 +448,31 @@ h5 {
 .navigation.active
 {
     position: fixed;
-    top: 0;
+    border-top: 10svh solid var(--background-color);
+    top: 0svh;
     left: 0;
     width: 100%;
     height: auto;
     display: flex;
     padding-top: 2svh;
     padding-bottom: 2svh;
-    row-gap: 1.5em;
+    row-gap: 1.7em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 1.2em;
+    font-size: 1.3em;
     background: var(--mobile-background-color);
     z-index: 10;
+}
+
+#logo.active {
+  position:fixed;
+  z-index: 11;
+}
+
+.navigation.active a {
+  font-weight: 600;
+  font-size: 1.2em;
 }
   
 }
