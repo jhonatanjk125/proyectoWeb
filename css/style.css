@@ -44,6 +44,11 @@ header > nav > ul > li {
   padding: 0 18px;
 }
 
+header > nav > ul > li:last-child {
+  list-style: none;
+  padding-right: 0px;
+}
+
 header > nav > ul > li > a {
   text-decoration: none;
   color: var(--text-color);
@@ -164,6 +169,7 @@ p {
   top: 0%;
   right: 0%;
   width: 50px;
+  border-radius: 0 0 0 50%;
 }
 
 h4 {
