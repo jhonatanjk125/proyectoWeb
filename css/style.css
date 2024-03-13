@@ -477,6 +477,10 @@ h5 {
     z-index: 10;
 }
 
+.navigation.active li {
+  padding: 0;
+}
+
 #logo.active {
   position:fixed;
   z-index: 11;
