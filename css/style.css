@@ -113,6 +113,11 @@ h1 {
   margin: auto;
 }
 
+.offered-services article p {
+  width:90%;
+  margin: auto;
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -191,7 +196,7 @@ h5 {
 
 #services .offered-services article{
   flex: 0 0 33%;
-  width: 400px;
+  max-width: 400px;
 }
 
 #services .offered-services article img {
@@ -269,9 +274,9 @@ h5 {
 
 
 @media (max-width: 1300px) {
-
   #home, #about, #menu, #services, #contact {
     padding: 5svh 6vw;
+    margin: auto;
   }
   h1 {
     font-size: 4rem;
@@ -312,8 +317,9 @@ h5 {
   #services p {
     padding: 0.5em 1em;
   }
+
   h1 {
-    font-size: 4rem;
+    font-size: 13vw;
   }
 
   #home p {
@@ -368,10 +374,6 @@ h5 {
     text-align: center;
   }
 
-  h1 {
-    font-size: 3.5rem;
-  }
-
   h3 {
     font-size: 2rem;
     padding: 3vh 0;
@@ -408,7 +410,7 @@ h5 {
   }
 
   #contact > nav {
-    padding-left: 15vw;
+    padding-left: 10vw;
   }
 
   #contact > nav:last-child {
@@ -479,4 +481,23 @@ h5 {
   font-size: 1.2em;
 }
   
+}
+
+@media(max-width:400px) {
+  #services .offered-services article img {
+    width: 50vw;
+  }
+
+  #menu .menu-items article img:first-child {
+    width: 50vw;
+  }
+
+  .offered-services article p {
+    margin:auto;
+    width: 90%;
+  }
+
+  #contact > nav {
+    padding-left: 5vw;
+  }
 }
