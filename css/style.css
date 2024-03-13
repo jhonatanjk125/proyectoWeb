@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.05em;
+  scroll-behavior: smooth;
 }
 
 a {
