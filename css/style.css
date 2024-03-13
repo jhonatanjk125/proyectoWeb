@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+    background-color: transparent;
   }
 
 body {
@@ -23,30 +24,37 @@ aside {
   width: 25%;
   flex-direction: column;
   align-items: center;
-  padding: 5svh 2vw;
+  padding: 3svh 2vw;
   justify-content: space-between;
   background-color: var(--secondary-background-color);
+  border-radius: 3%;
 }
 
 main {
   width: 75%;
   background-color: var(--secondary-background-color);
   overflow-y: scroll;
-  padding-top: 1em;
+  padding: 3svh 2vw;
+  border-radius: 3%;
 }
 
 main section {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   grid-template-rows: auto;
+  gap: 2svh 2vw;
 }
 
 main section article {
+  background-color: var(--tertiary-background-color);
+  border-radius: 2em;
+  border: 2px solid var(--secondary-color);
   width: 100%;
 }
 
 main section article img {
   width: 100%;
+  max-height: max-content;
 }
 
 h1 {
@@ -63,4 +71,27 @@ h2 {
 
 li {
   list-style: none;
+}
+
+main section article div {
+  width: 100%;
+  border-radius: 0 0 2em 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  background-color: var(--light-secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+main section article div a {
+  align-self: end;
+  color: var(--primary-color);
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  border: 1px dashed var(--primary-color);
+  background-color: var(--light-primary-color);
 }
