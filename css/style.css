@@ -269,6 +269,10 @@ h5 {
 
 
 @media (max-width: 1300px) {
+
+  #home, #about, #menu, #services, #contact {
+    padding: 5svh 6vw;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -286,7 +290,7 @@ h5 {
   }
 
   #services {
-    padding: 5svh;
+    padding: 0 2vw;
     height: auto;
   }
 
@@ -342,10 +346,10 @@ h5 {
 
   #home {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
-    padding: 3vw;
     height: auto;
     margin: auto;
   }
@@ -355,9 +359,9 @@ h5 {
     align-items: center;
     width: 100%;
     flex-direction: column-reverse;
-    padding: 3vw;
     height: auto;
     text-align: center;
+    min-height: auto;
   }
   
   .banner {
