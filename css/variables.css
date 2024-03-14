@@ -13,13 +13,13 @@
 }
 
 .dark-theme {
-    --primary-color: #73e279;
+    --primary-color: #1ed760;
     --text-color: #fff;
     --background-color: #000000;
     --border: 1px solid #242429;
     --secondary-background-color: #18181b;
     --tertiary-background-color: #1f464875;
-    --shadow: 0 0 10px 0 #73e279;
+    --shadow: 0 0 10px 0 #1ed760;
     --menu-icon: url(../storage/img/menu-dark-theme.svg);
     --close-icon: url(../storage/img/close-dark-theme.svg);
 }
