@@ -19,6 +19,11 @@ body {
   column-gap: 2vw;
 }
 
+i.bx {
+  padding: 1em;
+  vertical-align: center;
+}
+
 aside {
   display: flex;
   width: 20%;
@@ -67,11 +72,17 @@ main section article {
   border-radius: 2em;
   border: 2px solid var(--secondary-color);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main section article img {
   width: 100%;
-  max-height: max-content;
+  border-radius: 2rem 2rem 0 0;
+  max-height: 350px;
+  margin-bottom: 0;
+  object-fit: cover;
 }
 
 h1 {
@@ -90,10 +101,15 @@ h2 {
 
 .cart-view article {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
+  justify-items: center;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1em 2em;
+  padding: 1em;
+  row-gap: 0;
+  text-align: center;
 }
 
 .cart-view article * {
@@ -101,11 +117,64 @@ h2 {
 }
 
 .cart-view article img {
-  width: 20%;
+  min-width: 100px;
+  width: 15%;
   max-height: 100px;
-  display: flex;
 }
 
+.cart-view > div {
+  display:flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#confirm-payment {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "total_label buy-bt"
+  "total buy-bt";
+  gap: 0.5em 2em;
+}
+
+#confirm-payment p:first-child {
+  grid-area: total_label;
+}
+
+#confirm-payment p:last-child {
+  grid-area: total;
+}
+
+#confirm-payment a {
+  grid-area: buy-bt;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  border: 1px dashed var(--primary-color);
+  background-color: var(--light-primary-color);
+}
+
+section a {
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  color: var(--primary-color);
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  border: 1px dashed var(--primary-color);
+  background-color: var(--light-primary-color);
+}
+
+.cart-view article i {
+  color: var(--primary-color);
+  font-size: 1.5em;
+}
 
 .navigation li {
   padding: 1.2em 0;
@@ -117,6 +186,7 @@ li {
 
 main section article div {
   width: 100%;
+  margin-top: 0;
   border-radius: 0 0 2em 2em;
   box-sizing: border-box;
   display: flex;
@@ -171,6 +241,13 @@ main section article div a {
     padding: 0 5vw;
   }
 
+  .cart-view > div {
+    flex-direction: column;
+  }
+  
+  #confirm-payment {
+    padding-top: 1.5em;
+  }
 
   .toggle div {
     width: 35px;
@@ -198,21 +275,20 @@ main section article div a {
     display: block;
     position: fixed;
     top: 0svh;
-    left: 0;
+    right: 0;
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     display: flex;
-    padding-top: 2svh;
-    padding-bottom: 2svh;
     row-gap: 0.1em;
+    padding-right: 10vw;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background: var(--light-primary-color);
     color: var(--text-color);
     font-weight: bold;
     z-index: 10;
+    align-items: center;
   }
 
   .navigation li a {
