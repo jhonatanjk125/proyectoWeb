@@ -70,7 +70,6 @@ main section {
 main section article {
   background-color: var(--tertiary-background-color);
   border-radius: 2em;
-  border: 2px solid var(--secondary-color);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -90,7 +89,7 @@ h1 {
 }
 
 h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   padding-bottom: 1em;
 }
 
@@ -106,6 +105,7 @@ h2 {
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
+  background-color: var(--light-primary-color);
   justify-content: space-evenly;
   padding: 1em;
   row-gap: 0;
@@ -153,11 +153,11 @@ h2 {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   border-radius: 2em;
   padding: 0.5em 1em;
-  border: 1px dashed var(--primary-color);
-  background-color: var(--light-primary-color);
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--background-color);
 }
 
 section a {
@@ -167,8 +167,8 @@ section a {
   color: var(--primary-color);
   border-radius: 2em;
   padding: 0.5em 1em;
-  border: 1px dashed var(--primary-color);
-  background-color: var(--light-primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
 }
 
 .cart-view article i {
@@ -193,18 +193,18 @@ main section article div {
   flex-direction: column;
   padding: 1em 2em;
   row-gap: 0.5em;
-  background-color: var(--light-secondary-color);
+  background-color: var(--light-primary-color);
 }
 
 main section article div a {
   width: 100%;
   text-decoration: none;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   border-radius: 2em;
   padding: 0.5em 1em;
-  border: 1px dashed var(--primary-color);
-  background-color: var(--light-primary-color);
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--background-color);
 }
 
 .toggle {
@@ -220,14 +220,17 @@ main section article div a {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding-top: 0;
   }
 
   .toggle {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
+    background-color: var(--light-primary-color);
     align-items: center;
-    padding: 1.5em 2vw;
+    height:8svh;
+    padding: 2em 2vw;
   }
 
   aside {
@@ -238,7 +241,7 @@ main section article div a {
     background-color: transparent;
     text-align: center;
     width: 100%;
-    padding: 0 5vw;
+    padding: 1.5em 5vw 0 5vw;
   }
 
   .cart-view > div {
