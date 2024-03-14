@@ -83,6 +83,30 @@ h2 {
   padding-bottom: 1em;
 }
 
+.cart-view {
+  display:flex;
+  flex-direction: column;
+}
+
+.cart-view article {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em 2em;
+}
+
+.cart-view article * {
+  background-color: transparent;
+}
+
+.cart-view article img {
+  width: 20%;
+  max-height: 100px;
+  display: flex;
+}
+
+
 .navigation li {
   padding: 1.2em 0;
 }
