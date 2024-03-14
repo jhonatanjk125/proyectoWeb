@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
+    --primary-color: #521c6f;
+    --text-color: #000;
+    --background-color: #fafafa;
+    --border: 1px solid #d0d0ee;
+    --secondary-background-color: #ffffff;
+    --tertiary-background-color: #8200b6;
+    --shadow: 0 0 10px 0 #521c6f;
+}
+
+.dark-theme {
     --primary-color: #73e279;
     --text-color: #fff;
     --background-color: #000000;
     --border: 1px solid #242429;
     --secondary-background-color: #18181b;
     --tertiary-background-color: #1f464875;
-    --secondary-color: #73e279;
     --shadow: 0 0 10px 0 #73e279;
 }
