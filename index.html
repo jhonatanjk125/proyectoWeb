@@ -11,17 +11,29 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="toggle">
+    <h1>CampusShop</h1>
+    <div id="menu" onclick="toggleMenu()"></div>
+    <ul class="navigation">
+      <li><a>Todos los productos</a></li>
+      <li><a>Abrigos</a></li>
+      <li><a>Camisetas</a></li>
+      <li><a>Pantalones</a></li>
+      <li><a>Carrito</a></li>
+    </ul>
+  </header>
     <aside>
       <h1>CampusShop</h1>
       <nav>
-        <ul class="navigation">
+        <ul>
           <li><a>Todos los productos</a></li>
           <li><a>Abrigos</a></li>
           <li><a>Camisetas</a></li>
           <li><a>Pantalones</a></li>
+          <li id="cart"><a>Carrito</a></li>
         </ul>
       </nav>
-      <a>Carrito</a>
+
       <footer>2023 Camper</footer>
     </aside>
     <main>
@@ -149,5 +161,6 @@
         </article>
       </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
