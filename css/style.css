@@ -263,7 +263,7 @@ main section article div a {
     height: 35px;
     display: block;
     cursor: pointer;
-    background: url(../storage/img/menu.svg);
+    background: var(--menu-icon);
     background-size: 35px;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ main section article div a {
   .toggle.active div {
     position: fixed;
     right: 20px;
-    background: url(../storage/img/close.svg);
+    background: var(--close-icon);
     background-size: 35px;
     background-position: center;
     background-repeat: no-repeat;

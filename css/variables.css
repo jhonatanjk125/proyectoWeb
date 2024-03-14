@@ -6,8 +6,10 @@
     --background-color: #fafafa;
     --border: 1px solid #d0d0ee;
     --secondary-background-color: #ffffff;
-    --tertiary-background-color: #8200b6;
+    --tertiary-background-color: #ffffff;
     --shadow: 0 0 10px 0 #521c6f;
+    --menu-icon: url(../storage/img/menu.svg);
+    --close-icon: url(../storage/img/close.svg);
 }
 
 .dark-theme {
@@ -18,4 +20,6 @@
     --secondary-background-color: #18181b;
     --tertiary-background-color: #1f464875;
     --shadow: 0 0 10px 0 #73e279;
+    --menu-icon: url(../storage/img/menu-dark-theme.svg);
+    --close-icon: url(../storage/img/close-dark-theme.svg);
 }
