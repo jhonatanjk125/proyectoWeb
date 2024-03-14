@@ -303,13 +303,13 @@ main section article div a {
     z-index: 11;
   }
 
-  #dark-mode-toggle {
+  i.bx.bx-sun, i.bx.bx-moon {
     display: none;
   }
 
-  #dark-mode-toggle.active {
+  i.bx.bx-sun.active, i.bx.bx-moon.active {
     display:block;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
