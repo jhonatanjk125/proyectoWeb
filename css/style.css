@@ -19,8 +19,8 @@ body {
   column-gap: 2vw;
 }
 
-i.bx {
-  padding: 1em;
+ul > li > a i.bx {
+  padding-right: 1em;
   vertical-align: center;
 }
 
@@ -316,6 +316,7 @@ main section article div a {
     left: 8vw;
     z-index: 11;
     cursor: pointer;
+    color: var(--primary-color)
   }
 
   .navigation.active {
