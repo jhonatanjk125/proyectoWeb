@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font);
   scroll-behavior: smooth;
   background-color: transparent;
 }
@@ -47,6 +47,26 @@ aside nav ul li a {
 
 #cart {
   padding-top: 5em;
+}
+
+#cart a {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.cart-counter {
+  color: var(--primary-color);
+  width: 1.3em;
+  height: 1.3em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -104,6 +124,7 @@ main section article img {
   max-height: 350px;
   margin-bottom: 0;
   object-fit: cover;
+  max-height: 293.14px;
 }
 
 h1 {
@@ -343,6 +364,11 @@ main section article div a {
 
   .navigation.active li a:active {
     color: var(--primary-color);
+  }
+
+  .navigation li a:last-child {
+    display: flex;
+    column-gap: 1em;
   }
 }
 
