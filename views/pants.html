@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="toggle">
+      <h1>CampusShop</h1>
+      <div id="menu" onclick="toggleMenu()"></div>
+      <i onclick="toggleDarkMode()" class='dark-mode-toggle bx bx-moon bx-tada'></i>
+      <ul class="navigation">
+        <li>
+          <a href="./index.html"
+            ><i class="bx bx-store-alt"></i>Todos los productos</a
+          >
+        </li>
+        <li>
+          <a href="./coats.html"
+            ><i class="bx bx-cloud-rain"></i>Abrigos</a
+          >
+        </li>
+        <li>
+          <a href="./shirts.html"
+            ><i class="bx bxs-t-shirt"></i>Camisetas</a
+          >
+        </li>
+        <li>
+          <a href="./pants.html"
+            ><i class="bx bx-closet"></i>Pantalones</a
+          >
+        </li>
+        <li>
+          <a href="./cart.html"><i class="bx bx-cart"></i>Carrito</a>
+        </li>
+      </ul>
+    </header>
+    <aside>
+      <h1>CampusShop</h1>
+      <nav>
+        <ul>
+            <li>
+              <a href="../index.html"
+                ><i class="bx bx-store-alt"></i>Todos los productos</a
+              >
+            </li>
+            <li>
+              <a href="./coats.html"
+                ><i class="bx bx-cloud-rain"></i>Abrigos</a
+              >
+            </li>
+            <li>
+              <a href="./shirts.html"
+                ><i class="bx bxs-t-shirt"></i>Camisetas</a
+              >
+            </li>
+            <li>
+              <a href="./pants.html"
+                ><i class="bx bx-closet"></i>Pantalones</a
+              >
+            </li>
+            <li id="cart">
+              <a href="./cart.html"><i class="bx bx-cart"></i>Carrito</a>
+            </li>
+          </ul>
+      </nav>
+
+      <footer>2023 Camper</footer>
+    </aside>
+    <main>
+      <div class="header">
+        <h2>Todos los productos</h2>
+        <i onclick="toggleDarkMode()" class='dark-mode-toggle bx bx-moon bx-tada'></i>
+      </div>
+      <section>
+        <article>
+          <img
+            src="https://hmcolombia.vtexassets.com/arquivos/ids/3407603-483-725?v=638420538309830000&width=483&height=725&aspect=true"
+            alt=""
+          />
+          <div>
+            <h3>Pantalon 01</h3>
+            <p>$ 2.500</p>
+            <a href="">Agregar</a>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://hmcolombia.vtexassets.com/arquivos/ids/3483940/Pantalon-cargo-Loose-Fit---Verde-grisaceo-oscuro---H-M-CO.jpg?v=638435816304200000"
+            alt=""
+          />
+          <div>
+            <h3>Pantalon 02</h3>
+            <p>$ 2.000</p>
+            <a href="">Agregar</a>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://hmcolombia.vtexassets.com/arquivos/ids/3033933/Pantalon-sudadera-THERMOLITE%C2%AE-Relaxed-Fit---Azul---H-M-CO.jpg?v=638308792482770000"
+            alt=""
+          />
+          <div>
+            <h3>Pantalon 03</h3>
+            <p>$ 1.500</p>
+            <a href="">Agregar</a>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://hmcolombia.vtexassets.com/arquivos/ids/3411090/Pantalon-cargo-Loose-Fit---Negro---H-M-CO.jpg?v=638420560670270000"
+            alt=""
+          />
+          <div>
+            <h3>Pantalon 04</h3>
+            <p>$ 2.000</p>
+            <a href="">Agregar</a>
+          </div>
+        </article>
+        <article>
+          <img
+            src="https://hmcolombia.vtexassets.com/arquivos/ids/3523626/Pantalon-cargo-Ripstop-Regular-Fit---Gris-oscuro---H-M-CO.jpg?v=638447894689930000"
+            alt=""
+          />
+          <div>
+            <h3>Pantalon 05</h3>
+            <p>$ 2.500</p>
+            <a href="">Agregar</a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
